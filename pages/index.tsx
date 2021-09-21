@@ -1,6 +1,9 @@
-const Home = () => {
+import {Navbar} from "@components/Navbar";
+
+export default function Home() {
     return (
         <>
+            <Navbar/>
             <main>
                 <div className='h-[100vh] flex flex-col justify-center align-middle text-center'>
                     <h1 className='text-[72px] bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 font-extrabold'>
@@ -15,5 +18,3 @@ const Home = () => {
         </>
     );
 }
-
-export default Home;
