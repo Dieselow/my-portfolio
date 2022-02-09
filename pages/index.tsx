@@ -6,12 +6,12 @@ export default function Home() {
             <Navbar/>
             <main>
                 <div className='h-[100vh] flex flex-col justify-center align-middle text-center'>
-                    <h1 className='text-[72px] bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 font-extrabold'>
-                        Batteries Included Next.js
+                    <h1 className='fade-in-text  bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-700 font-extrabold'>
+                        Bonjour
                     </h1>
+                    <h3>(hello)</h3>
                     <h2 className='text-2xl max-w-md mx-auto'>
-                        A Next.js Boilerplate with TypeScript, Tailwind CSS and testing
-                        suite enabled
+                        Welcome to my online resume with a display of my school projects, some work experiences I had before, a little about me and finally ways to contact me.
                     </h2>
                 </div>
             </main>
