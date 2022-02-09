@@ -10,16 +10,16 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className='flex items-center flex-wrap bg-green-400 p-3 '>
+            <nav className='flex sticky top-0  items-center flex-wrap border-b border-gray-200 p-3 backdrop-filter backdrop-blur-lg bg-opacity-30 '>
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4 '>
-                        <span className='text-xl text-white font-bold uppercase tracking-wide'>
+                        <span className='text-xl text-black font-bold uppercase tracking-wide'>
                         Portfolio
                         </span>
                     </a>
                 </Link>
                 <button
-                    className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+                    className=' inline-flex p-3 hover:bg-blue-700 rounded lg:hidden text-black ml-auto hover:text-white outline-none'
                     onClick={handleClick}
                 >
                     <svg
@@ -46,23 +46,23 @@ export const Navbar = () => {
                     <div
                         className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
+                            <a className='lg:inline-flex lg:w-auto w-full mx-3 my-2  text-black font-bold items-center justify-center  transition duration-500 border-transparent border-b-2 hover:border-black  '>
                                 Home
                             </a>
                         </Link>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                                Services
+                            <a className='lg:inline-flex lg:w-auto w-full mx-3 my-2  text-black font-bold items-center justify-center  transition duration-500 border-transparent border-b-2 hover:border-black  '>
+                                Projects
                             </a>
                         </Link>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                                About us
+                            <a className='lg:inline-flex lg:w-auto w-full mx-3 my-2  text-black font-bold items-center justify-center  transition duration-500 border-transparent border-b-2 hover:border-black  '>
+                                About Me
                             </a>
                         </Link>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                                Contact us
+                            <a className='lg:inline-flex lg:w-auto w-full mx-3 my-2  text-black font-bold items-center justify-center  transition duration-500 border-transparent border-b-2 hover:border-black  '>
+                                Contact Me
                             </a>
                         </Link>
                     </div>
