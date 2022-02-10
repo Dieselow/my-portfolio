@@ -4,10 +4,6 @@ import Image from 'next/image'
 export const ProjectList = () => {
     const [active, setActive] = useState(false);
 
-    const handleClick = () => {
-        setActive(!active);
-    };
-
     return (
         <>
             <div  className="focus:outline-none">

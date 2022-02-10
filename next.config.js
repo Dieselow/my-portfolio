@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['cdn.tuk.dev'],
+    domains: ['cdn.tuk.dev','images.unsplash.com'],
   },
 }
