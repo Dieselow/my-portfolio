@@ -57,16 +57,18 @@ export const ProjectModal = () => {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                            <div className="inline-block w-full max-w-lg p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
                                 <Dialog.Title
                                     as="h3"
                                     className="text-lg font-medium leading-6 text-gray-900"
                                 >
                                     Project Name
                                 </Dialog.Title>
-                                <div className="mt-2">
-                                    <ImageSlider/>
-                                    <p className="text-sm text-gray-500">
+                                <div className="mt-2 flex">
+                                    <div className="h-full w-full object-none">
+                                        <ImageSlider/>
+                                    </div>
+                                    <p className="text-sm pl-2 text-gray-500">
                                         Your payment has been successfully submitted. We’ve sent you
                                         an email with all of the details of your order.
                                     </p>
@@ -75,7 +77,7 @@ export const ProjectModal = () => {
                                 <div className="mt-4">
                                     <button
                                         type="button"
-                                        className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                                        className="justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                                         onClick={closeModal}
                                     >
                                         Got it, thanks!

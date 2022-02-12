@@ -30,8 +30,7 @@ export const ImageSlider = () => {
         <>
             <div className="max-w-screen-xl m-auto">
                 <div ref={slideRef} className="align-middle w-full relative select-none">
-                    <Image height="300" width="300" src={images[currentIndex]} alt=""/>
-
+                    <Image height={300} width={300} layout={"fixed"} src={images[currentIndex]} alt=""/>
                     <div
                         className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-start px-3">
                         <button
