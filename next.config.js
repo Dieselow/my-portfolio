@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['cdn.tuk.dev','images.unsplash.com'],
+    domains: ['cdn.tuk.dev','images.unsplash.com','github.com'],
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')]

@@ -9,6 +9,9 @@
     -ms-animation: fadeIn linear 1.5s;
 }
 
+nav{
+    z-index: 9999;
+}
 
 .modal-project {
     background-color: rgba(0,0,0,0.4); /* <-- this is the culprit */

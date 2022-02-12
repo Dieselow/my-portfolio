@@ -9,9 +9,11 @@ export default function Home() {
                     <h1 className='fade-in-text  bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-700 font-extrabold'>
                         Bonjour
                     </h1>
-                    <h3>(hello)</h3>
+                    <h3>(Hello)</h3>
                     <h2 className='text-2xl max-w-md mx-auto'>
-                        Welcome to my online resume with a display of my school projects, some work experiences I had before, a little about me and finally ways to contact me.
+                        Welcome to my online portfolio !
+                        <br/> My name is Louis Dumont, I&apos;m a 22 french student in Canada currently studying for a double Master&apos;s degree in Professional IT and Software Architect
+                        <br/> In this website you&apos;ll find the projects that I&apos;ve achieved during my schooling
                     </h2>
                 </div>
             </main>
