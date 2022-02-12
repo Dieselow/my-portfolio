@@ -14,10 +14,12 @@
   "dependencies": {
     "@headlessui/react": "^1.4.3",
     "@tailwindcss/aspect-ratio": "^0.4.0",
+    "compass-mixins": "^0.12.10",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "sass": "^1.49.7"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.5.0",
@@ -34,6 +36,10 @@
     "node-mocks-http": "^1.10.1",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.3.2",
+    "precss": "^4.0.0",
     "tailwindcss": "^2.2.15",
     "ts-jest": "^27.0.5",
     "ts-loader": "^9.2.6",
