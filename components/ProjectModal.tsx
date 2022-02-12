@@ -1,32 +1,14 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import {ImageSlider} from "@components/ImageSlider";
-
-export const ProjectModal = () => {
-    let [isOpen, setIsOpen] = useState(true)
-    function closeModal() {
-        setIsOpen(false)
-    }
-    function openModal() {
-        setIsOpen(true)
-    }
+export default function ProjectModal (props){
     return(
         <>
-            <div className="fixed inset-0 flex items-center justify-center">
-                <button
-                    type="button"
-                    onClick={openModal}
-                    className="px-4 py-2 text-sm font-medium text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-                >
-                    Open dialog
-                </button>
-            </div>
-
-            <Transition appear show={isOpen} as={Fragment}>
+            <Transition appear show={props.isOpen} as={Fragment}>
                 <Dialog
                     as="div"
                     className="fixed inset-0 z-10 overflow-y-auto"
-                    onClose={closeModal}
+                    onClose={props.toggle}
                 >
                     <div className="min-h-screen px-4 text-center">
                         <Transition.Child
@@ -38,7 +20,7 @@ export const ProjectModal = () => {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                         >
-                            <Dialog.Overlay className="fixed inset-0" />
+                            <Dialog.Overlay className="fixed inset-0 modal-project" />
                         </Transition.Child>
 
                         {/* This element is to trick the browser into centering the modal contents. */}
@@ -78,7 +60,7 @@ export const ProjectModal = () => {
                                     <button
                                         type="button"
                                         className="justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-                                        onClick={closeModal}
+                                        onClick={props.toggle}
                                     >
                                         Got it, thanks!
                                     </button>
