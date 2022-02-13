@@ -1,7 +1,13 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
-import {ImageSlider} from "@components/ImageSlider";
+import ImageSlider from "@components/ImageSlider";
 export default function ProjectModal (props){
+    function Slider(){
+        if (props.isOpen){
+            return <ImageSlider projectDirectory={props.projectImagesDirectory} projectImages={props.projectImages} />
+        }
+        return null;
+    }
     return(
         <>
             <Transition appear show={props.isOpen} as={Fragment}>
@@ -44,11 +50,11 @@ export default function ProjectModal (props){
                                     as="h3"
                                     className="text-lg font-medium leading-6 text-gray-900"
                                 >
-                                    Project Name
+                                    {props.projectTitle}
                                 </Dialog.Title>
                                 <div className="mt-2 flex">
                                     <div className="h-full w-full object-none">
-                                        <ImageSlider/>
+                                    <Slider/>
                                     </div>
                                     <p className="text-sm pl-2 text-gray-500">
                                         Your payment has been successfully submitted. We’ve sent you

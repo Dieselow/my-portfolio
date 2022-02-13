@@ -5,24 +5,31 @@ import ProjectModal from "@components/ProjectModal";
 export default class ProjectList extends Component {
     state = {
         showModal: false,
+        projectTitle: "",
+        projectImages: "",
+        projectImagesDirectory: ""
     }
 
-    toggleModal = () => {
-        this.setState({showModal: !this.state.showModal});
+    toggleModal = (projectName: String, imagesDirectory: String, images: Array<String>) => {
+        this.setState({showModal: !this.state.showModal, projectTitle: projectName, projectImages: images, projectImagesDirectory: imagesDirectory });
     }
 
     render() {
         return (
             <>
                 <ProjectModal isOpen={this.state.showModal}
-                              toggle={this.toggleModal}/>
+                              toggle={this.toggleModal}
+                              projectTitle ={this.state.projectTitle}
+                              projectImages={this.state.projectImages}
+                              projectImagesDirectory={this.state.projectImagesDirectory}
+                />
                 <div className="focus:outline-none">
                     <div className="mx-auto container pb-8 mt-12">
                         <div className="flex flex-wrap items-center lg:justify-between justify-center">
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card content-center" onClick={this.toggleModal}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card content-center" onClick={() => this.toggleModal("Meet Inn","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
                                 <div>
-                                    <Image alt="person capturing an image"
-                                           src="/MeetIn - Icon.png"
+                                    <Image alt="IOS app Icon"
+                                           src="/images/projects/MeetIn - Icon.png.png"
                                            tabIndex={0}
                                            width="300px" height="200px"
                                            className="focus:outline-none w-full h-44 object-contain"/>
