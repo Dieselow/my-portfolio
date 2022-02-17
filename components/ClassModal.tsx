@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import ImageSlider from "@components/ImageSlider";
-export default function ProjectModal (props){
+export default function ClassModal (props){
     function Slider(){
         if (props.isOpen){
             return <ImageSlider projectDirectory={props.projectImagesDirectory} projectImages={props.projectImages} />

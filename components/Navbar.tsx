@@ -55,6 +55,11 @@ export const Navbar = () => {
                                 Projects
                             </a>
                         </Link>
+                        <Link href='/classes'>
+                            <a className='lg:inline-flex lg:w-auto w-full mx-3 my-2  text-black font-bold items-center justify-center  transition duration-500 border-transparent border-b-2 hover:border-black  '>
+                                Classes
+                            </a>
+                        </Link>
                         <Link href='/'>
                             <a className='lg:inline-flex lg:w-auto w-full mx-3 my-2  text-black font-bold items-center justify-center  transition duration-500 border-transparent border-b-2 hover:border-black  '>
                                 About Me
