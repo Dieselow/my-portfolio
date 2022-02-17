@@ -3,7 +3,6 @@ import Image from 'next/image'
 import ClassModal from "@components/ClassModal";
 
 export default class ProjectList extends Component {
-
     render() {
         return (
             <>
@@ -28,6 +27,7 @@ export default class ProjectList extends Component {
                                         </td>
                                         <td className={"px-6 py-4"}>Malcolm Lockyer</td>
                                         <td className={"px-6 py-4"}>1961</td>
+                                        <td className={"px-6 py-4"}>truc</td>
                                         <td className="px-6 py-4">
                                             <a href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -42,6 +42,7 @@ export default class ProjectList extends Component {
                                         <td className={"text-sm text-gray-900"}>Witchy Woman</td>
                                         <td className={"px-6 py-4"}>The Eagles</td>
                                         <td className={"px-6 py-4"}>1972</td>
+                                        <td className={"px-6 py-4"}>truc</td>
                                         <td className="px-6 py-4">
                                             <a href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -56,6 +57,7 @@ export default class ProjectList extends Component {
                                         <td className={"text-sm text-gray-900"}>Shining Star</td>
                                         <td className={"px-6 py-4"}>Earth, Wind, and Fire</td>
                                         <td className={"px-6 py-4"}>1975</td>
+                                        <td className={"px-6 py-4"}>truc</td>
                                         <td className="px-6 py-4">
                                             <a href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

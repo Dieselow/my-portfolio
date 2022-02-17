@@ -6,7 +6,7 @@ export default class ClassesList extends Component {
     state = {
         showModal: false,
         projectTitle: "",
-        projectImages: "",
+        projectImages: [],
         projectImagesDirectory: ""
     }
 
@@ -68,7 +68,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={this.toggleModal}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={() => this.toggleModal}>
                                 <div>
                                     <Image alt="person capturing an image"
                                            src="https://cdn.tuk.dev/assets/templates/classified/Bitmap (1).png"
@@ -127,7 +127,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={this.toggleModal}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={() => this.toggleModal}>
                                 <div>
                                     <Image alt="person capturing an image"
                                            src="https://cdn.tuk.dev/assets/templates/classified/Bitmap (1).png"
@@ -186,7 +186,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={this.toggleModal}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={() => this.toggleModal}>
                                 <div>
                                     <Image alt="person capturing an image"
                                            src="https://cdn.tuk.dev/assets/templates/classified/Bitmap (1).png"
@@ -247,7 +247,7 @@ export default class ClassesList extends Component {
                             </div>
                         </div>
                         <div className="flex flex-wrap items-center lg:justify-between justify-center pb-10 mt-16">
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={this.toggleModal}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={() => this.toggleModal}>
                                 <div>
                                     <Image alt="girl texting"
                                            src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
@@ -305,7 +305,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={this.toggleModal}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={() => this.toggleModal}>
                                 <div>
                                     <Image alt="girl texting"
                                            src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
@@ -363,7 +363,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={this.toggleModal}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={() => this.toggleModal}>
                                 <div>
                                     <Image alt="girl texting"
                                            src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
@@ -421,7 +421,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={this.toggleModal}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 card" onClick={() => this.toggleModal}>
                                 <div>
                                     <Image alt="girl texting"
                                            src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"

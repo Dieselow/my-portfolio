@@ -4,15 +4,19 @@ import {AiOutlineVerticalRight, AiOutlineVerticalLeft} from "react-icons/ai";
 
 
 let count = 0;
-export default function ImageSlider(props){
-    const images: Array<String> = [];
+interface ImageProps {
+    projectImages: Array<String>
+    projectDirectory: String
+}
+export default function ImageSlider(props: ImageProps){
+    const images: Array<string> = [];
     if (props.projectImages != undefined){
         props.projectImages.forEach((image: String)=> {
             images.push("/images/projects/" + props.projectDirectory + "/" + image)
         });
     }
     const [currentIndex, setCurrentIndex] = useState(0);
-    const slideRef = useRef();
+    const slideRef = useRef<HTMLDivElement>(null);
     const handleOnNextClick = () => {
         count = (count + 1) % images.length;
         setCurrentIndex(count);

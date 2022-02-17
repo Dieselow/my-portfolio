@@ -1,7 +1,14 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import ImageSlider from "@components/ImageSlider";
-export default function ClassModal (props){
+interface ClassModal {
+    isOpen: boolean
+    toggle: Function
+    projectTitle: String
+    projectImages: Array<String>
+    projectImagesDirectory: String
+}
+export default function ClassModal (props: ClassModal){
     function Slider(){
         if (props.isOpen){
             return <ImageSlider projectDirectory={props.projectImagesDirectory} projectImages={props.projectImages} />
@@ -14,7 +21,7 @@ export default function ClassModal (props){
                 <Dialog
                     as="div"
                     className="fixed inset-0 z-10 overflow-y-auto"
-                    onClose={props.toggle}
+                    onClose={()=> props.toggle("","","")}
                 >
                     <div className="min-h-screen px-4 text-center">
                         <Transition.Child
@@ -66,7 +73,7 @@ export default function ClassModal (props){
                                     <button
                                         type="button"
                                         className="justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-                                        onClick={props.toggle}
+                                        onClick={()=> props.toggle("","","")}
                                     >
                                         Got it, thanks!
                                     </button>
