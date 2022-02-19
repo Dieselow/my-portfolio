@@ -1,5 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 import ImageSlider from "@components/ImageSlider";
 interface ClassModal {
     isOpen: boolean
