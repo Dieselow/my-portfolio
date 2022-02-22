@@ -4,14 +4,14 @@ import ImageSlider from "@components/ImageSlider";
 interface ClassModal {
     isOpen: boolean
     toggle: Function
-    projectTitle: String
-    projectImages: Array<String>
-    projectImagesDirectory: String
+    classTitle: String
+    classImages: Array<String>
+    classImagesDirectory: String
 }
 export default function ClassModal (props: ClassModal){
     function Slider(){
         if (props.isOpen){
-            return <ImageSlider projectDirectory={props.projectImagesDirectory} projectImages={props.projectImages} />
+            return <ImageSlider projectDirectory={props.classImagesDirectory} projectImages={props.classImages} />
         }
         return null;
     }
@@ -57,7 +57,7 @@ export default function ClassModal (props: ClassModal){
                                     as="h3"
                                     className="text-lg font-medium leading-6 text-gray-900"
                                 >
-                                    {props.projectTitle}
+                                    {props.classTitle}
                                 </Dialog.Title>
                                 <div className="mt-2 flex">
                                     <div className="h-full w-full object-none">

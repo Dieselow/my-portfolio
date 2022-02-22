@@ -23,7 +23,7 @@ export default class ProjectList extends Component {
                                     </thead>
                                     <tbody className={"bg-white divide-y divide-gray-300"}>
                                     <tr className={"whitespace-nowrap"}>
-                                        <td className={"text-sm text-gray-700"}>Company Software Architecture Project
+                                        <td className={"text-sm text-gray-900"}>Company Software Architecture Project
                                         </td>
                                         <td className={"px-6 py-4"}>UQAC Chicoutimi, Canada.</td>
                                         <td className={"px-6 py-4"}>2021</td>
@@ -120,7 +120,7 @@ export default class ProjectList extends Component {
                                         <td className={"px-6 py-4"}>ESGI Paris, France.</td>
                                         <td className={"px-6 py-4"}>2019</td>
                                         <td className={"px-6 py-4"}>Backend Programming</td>
-                                        <td className={"px-6 py-4"}>Mobile Programming</td>
+                                        <td className={"px-6 py-4"}>NodeJS</td>
                                         <td className="px-6 py-4">
                                             <a href="https://gitlab.com/Dieselow/burger.api">
                                                 <Image src="/images/gitlab-icon-rgb.svg" height={30} width={30} />
