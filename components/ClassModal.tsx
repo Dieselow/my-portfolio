@@ -1,6 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import ImageSlider from "@components/ImageSlider";
+const parse = require('html-react-parser');
 interface ClassModal {
     isOpen: boolean
     toggle: Function
