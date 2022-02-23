@@ -26,7 +26,7 @@ export default class ClassesList extends Component {
                 <div className="focus:outline-none">
                     <div className="mx-auto container pb-8 mt-12">
                         <div className="flex flex-wrap items-center lg:justify-between justify-center">
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card content-center" onClick={() => this.toggleModal("Programmation de plateforme Mobile","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card content-center" onClick={() => this.toggleModal("Mobile Platforms Programming","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
                                 <div>
                                     <Image alt="Google Android logo"
                                            src="/images/classes/android.png"
@@ -44,7 +44,7 @@ export default class ClassesList extends Component {
                                     </div>
                                     <div className="p-4">
                                         <div className="flex items-center">
-                                            <h2 tabIndex={0} className="focus:outline-none text-lg font-semibold">Mobile Plateforms Programming</h2>
+                                            <h2 tabIndex={0} className="focus:outline-none text-lg font-semibold">Mobile Platforms Programming</h2>
                                             <p tabIndex={0} className="focus:outline-none text-xs text-gray-600 pl-5">2022</p>
                                         </div>
                                         <p tabIndex={0} className="focus:outline-none text-xs text-gray-600 mt-2">Class focused on learning Mobile Programming on Android with use of Kotlin</p>
@@ -108,7 +108,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card"  onClick={() =>this.toggleModal("Programmation de plateforme Mobile","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card"  onClick={() =>this.toggleModal("Project Management","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
                                 <div>
                                     <Image alt="Project Management art image"
                                            src="/images/classes/project management.jpeg"
@@ -148,7 +148,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card"  onClick={() =>this.toggleModal("Programmation de plateforme Mobile","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card"  onClick={() =>this.toggleModal("Enterprise Applications Architecture","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
                                 <div>
                                     <Image alt="TOGAF schema for understanding company architecture"
                                            src="/images/classes/enterprise-architecture.jpeg"
@@ -164,7 +164,7 @@ export default class ClassesList extends Component {
                                     </div>
                                     <div className="p-4">
                                         <div className="flex items-center">
-                                            <h2 tabIndex={0} className="focus:outline-none text-lg font-semibold">Company Application Architecture</h2>
+                                            <h2 tabIndex={0} className="focus:outline-none text-lg font-semibold">Enterprise Applications Architecture</h2>
                                             <p tabIndex={0} className="focus:outline-none text-xs text-gray-600 pl-5">2021</p>
                                         </div>
                                         <p tabIndex={0} className="focus:outline-none text-xs text-gray-600 mt-2">This class was about understanding the issues that a developer, and foremost a business architect, can meet when developing large applications. </p>
@@ -189,7 +189,7 @@ export default class ClassesList extends Component {
                             </div>
                         </div>
                         <div className="flex flex-wrap items-center lg:justify-between justify-center pb-10 mt-16">
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card"  onClick={() =>this.toggleModal("Programmation de plateforme Mobile","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card"  onClick={() =>this.toggleModal("Software Engineering","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
                                 <div>
                                     <Image alt="Understanding software engineering schema"
                                            src="/images/classes/software-engineering.jpeg"
@@ -228,7 +228,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card"  onClick={() =>this.toggleModal("Programmation de plateforme Mobile","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 h-[30rem] xl:mb-0 mb-8 card"  onClick={() =>this.toggleModal("Programming on parallel architectures","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
                                 <div>
                                     <Image alt="Parallel programming schema"
                                            src="/images/classes/parallel-programming.jpeg"
@@ -325,7 +325,7 @@ export default class ClassesList extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 h-[30rem] mb-8 card"  onClick={() =>this.toggleModal("Programmation de plateforme Mobile","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
+                            <div tabIndex={0} className="focus:outline-none mx-2 w-72 xl:mb-0 h-[30rem] mb-8 card"  onClick={() =>this.toggleModal("IOS Development in Swift","MeetInn",["login.png","Register.png","Partner.png","reserve1.png","reserve2.png"])}>
                                 <div>
                                     <Image alt="Apple Swift Logo"
                                            src="/images/classes/swift.png"

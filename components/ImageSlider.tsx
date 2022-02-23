@@ -17,7 +17,7 @@ export default function ImageSlider(props: ImageProps){
     }
     const [currentIndex, setCurrentIndex] = useState(0);
     const slideRef = useRef<HTMLDivElement>(null);
-    const handleOnNextClick = () => {
+   /** const handleOnNextClick = () => {
         count = (count + 1) % images.length;
         setCurrentIndex(count);
         // @ts-ignore
@@ -30,7 +30,7 @@ export default function ImageSlider(props: ImageProps){
         setCurrentIndex(count);
         // @ts-ignore
         slideRef.current.classList.add("fade-anim");
-    };
+    }; **/
 
 
     // @ts-ignore
@@ -41,6 +41,7 @@ export default function ImageSlider(props: ImageProps){
                     <Image height={300} width={300} className={"object-contain"} layout={"fixed"} src={images[currentIndex]} alt=""/>
                     <div
                         className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-start px-3">
+                        {/*
                         <button
                             className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
                             onClick={handleOnPrevClick}>
@@ -51,6 +52,7 @@ export default function ImageSlider(props: ImageProps){
                             onClick={handleOnPrevClick}>
                             <AiOutlineVerticalLeft size={35}/>
                         </button>
+                        */}
                     </div>
                 </div>
             </div>

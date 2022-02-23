@@ -1,0 +1,71 @@
+{
+  "Mobile Platforms Programming": {
+   "description": "Understanding the different problems and principles that allow building intuitive mobile apps. Mastering the concstraints about programming on mobile plateforms ",
+    "points": [
+      "App design principles",
+      "Ubiquitous computing and mobile programming",
+      "Understanding Mobile UX/UI",
+      "App components",
+      "Handling notifications",
+      "Gesture recognition",
+      "Using web services (Firebase)",
+      "NoSQL Database"
+    ]
+  },
+  "Advanced Software development": {
+    "description": "Understanding advanced software principles. Reusing software components (patterns, models, librairies, plateforms). Analysis patterns, architecture patterns, creational patterns etc...",
+    "points": [
+      "Oriented Development (MDA): model, architecture, plateform",
+      "Computation Independent Model",
+      "Platform-Independent Model",
+      "Platform-specific model"
+    ]
+  },
+  "Project Management": {
+    "description": "Mastering current principles and practises in project management. Handling professionally large project in software development.",
+    "points": [
+      "Predictive project management with PMBOK references",
+      "Cost estimation based on history (ex: PROBE)",
+      "Planning techniques (CPM, PERT, resource allocation and GANTT diagrams)",
+      "Risks handling",
+      "Project management metrics",
+      "Agile methods: Scrum, Kanban, etc ..."
+    ]
+  },
+  "Enterprise Applications Architecture": {
+    "description": "Learning the concepts about the development and architectures of enterprise applications. Discovering development infrastructures aspects and deployment of enterprise applications",
+    "points": [
+      "User interfaces studies",
+      "Development and deployment of enterprise applications",
+      "Java EJB, Java Beans and client-server architecture RMI-Java",
+      "Models oriented architecture",
+      "Service oriented architecture"
+    ]
+  },
+  "Programming on parallel architectures": {
+    "description": "Developing the abilities to identify potential parallelism of an application. Knowledge of the different models (abstracts and real) of parallel computers. Developing skill of building efficient parallel algorithms",
+    "points": [
+      "Parallel computer models",
+      "Parallel and distributed systems",
+      "Parallel algorithms",
+      "Multithread (POSIX,OPENMP)",
+      "Distributed computer programming (OPENMPI)",
+      "Graphic card programming (OPENCL)"
+    ]
+  },
+  "Software Engineering": {
+    "description": "This class was aiming to teach the process of software development and modular decomposition. Allowing students to analyse different methods and tools that improve and reduce costs of software development and management of systems",
+    "points": [
+      "Software development methods (classic, iterative, spiral, agile)",
+      "Rational unified process: concept and model",
+      "Development by models: Use cases and UML"
+    ]
+  },
+  "IOS Development in Swift": {
+    "description": "this is a description qksdjhqklsdlkqjdklqjdlqkljdklqjkljsdlkqjdlkjqskldjqk sqd qsdjq \n qsjdhkjf",
+    "points": [
+      "oui",
+      "non"
+    ]
+  }
+}
