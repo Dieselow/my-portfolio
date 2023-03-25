@@ -17,9 +17,21 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './theme-toggle-button';
+import React from 'react';
 //import { IoLogoGithub } from 'react-icons/io5'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
+const LinkItem = ({
+  href,
+  path,
+  target,
+  children,
+  ...props
+}: {
+  href: string;
+  path: string;
+  target?: any;
+  children: any;
+}) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900');
   return (
@@ -38,11 +50,11 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   );
 };
 
-const MenuLink = forwardRef((props, ref) => (
+const MenuLink = React.forwardRef<any, any>((props, ref) => (
   <Link ref={ref} as={NextLink} {...props} />
 ));
 
-const Navbar = props => {
+const Navbar = ({ props }: { props: any }) => {
   const { path } = props;
 
   return (
