@@ -8,12 +8,13 @@ import {
 } from '@chakra-ui/react';
 import Section from '@/components/section';
 import Paragraph from '@/components/paragraph';
-
+import Layout from '@/components/layout/article';
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 });
 
 const Home = () => (
+  <Layout>
   <Container>
     <Box
       borderRadius="lg"
@@ -60,6 +61,7 @@ const Home = () => (
       </Paragraph>
     </Section>
   </Container>
+  </Layout>
 );
 
 export default Home;
