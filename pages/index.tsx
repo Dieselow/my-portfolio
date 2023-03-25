@@ -4,7 +4,7 @@ import {
   Box,
   useColorModeValue,
   chakra,
-  Image
+  Image, Center
 } from '@chakra-ui/react';
 import Section from '@/components/section';
 import Paragraph from '@/components/paragraph';
@@ -33,7 +33,8 @@ const Home = () => (
         </Heading>
         <p>Digital Craftsman ( Artist / Developer / Designer )</p>
       </Box>
-      <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
+      <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+        <Center>
         <Image
           borderColor="whiteAlpha.800"
           borderWidth={2}
@@ -44,6 +45,7 @@ const Home = () => (
           src="/images/Animoji.png"
           alt="Profile Picture"
         />
+        </Center>
       </Box>
     </Box>
     <Section delay={0.1}>
