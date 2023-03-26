@@ -55,7 +55,7 @@ const MenuLink = React.forwardRef<any, any>((props, ref) => (
 ));
 
 const Navbar = ({ props }: { props: any }) => {
-  const { path } = props;
+  const { path } = props || {};
 
   return (
     <Box

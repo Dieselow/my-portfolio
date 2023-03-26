@@ -13,8 +13,8 @@ const variants = {
 };
 
 interface LayoutParameters {
-    children: any,
-    title?: string
+  children: any;
+  title?: string;
 }
 
 const Layout = ({ children, title }: LayoutParameters) => {
